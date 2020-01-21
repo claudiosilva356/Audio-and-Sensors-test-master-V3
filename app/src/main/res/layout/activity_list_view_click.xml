@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ListViewClickActivity">
+
+    <Button
+            android:id="@+id/btnOnHold"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="On Hold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+    <Button
+            android:id="@+id/btnClose"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="Close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toEndOf="@+id/btnOnHold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+    <Button
+            android:id="@+id/btnSetEvent"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="Set Event"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnOnHold"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+    <EditText
+            android:id="@+id/textViewEventDescription"
+            android:layout_width="324dp"
+            android:layout_height="103dp"
+            android:clickable="true"
+            android:editable="true"
+            android:enabled="true"
+            android:text="Add here your event Description"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSetEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.27" />
+</android.support.constraint.ConstraintLayout>

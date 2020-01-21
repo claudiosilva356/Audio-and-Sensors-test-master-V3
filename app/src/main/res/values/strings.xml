@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AudioAndAccelerometerRecordV2</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="recording_and_getting_accelerometer">Recording and Getting accelerometer</string>
+    <string name="tag_id">Tag Id</string>
+    <string name="server_url">Server URL</string>
+    <string name="saved_server_url_key">saved_server_url_key</string>
+    <string name="saved_tag_id_key">saved_tag_id_key</string>
+    <string name="saved_user_name">saved_user_name</string>
+    <string name="saved_Ip">saved_Ip</string>
+    <string name="saved_Port">saved_Port</string>
+
+</resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AudioAndAccelerometerRecordV2</string>
+    <string name="app_name">AudioAndAccelerometerRecordV3</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="recording_and_getting_accelerometer">Recording and Getting accelerometer</string>

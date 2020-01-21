@@ -59,10 +59,14 @@ class ClientSocketSendReceive(internal var ip: String, internal var port: Int,in
 
                     objectInputStream = ObjectInputStream(inputStream)
                     val messageRec = objectInputStream.readObject() as FrameActionMsg
-                    activities = messageRec.getActivities()
-                    System.out.println(messageRec.getActivities().toString())
-                    //if (mainActivityViewModel.taskArr != null)
-                    mainActivityViewModel.taskArr = getActivitiesArr() as Array<String>
+                    if(messageRec.getActivities()!=null) {
+                        activities = messageRec.getActivities()
+                        System.out.println(messageRec.getActivities().toString())
+                        //if (mainActivityViewModel.taskArr != null)
+                        mainActivityViewModel.taskArr = getActivitiesArr() as Array<String>
+                    }else{
+                        mainActivityViewModel.taskArr = arrayOf("")
+                    }
                 }
                 "SetActivityUpdate" -> {
                     val message = FrameActionMsg()
